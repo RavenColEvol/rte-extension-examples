@@ -1,0 +1,11 @@
+#word-counter {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 9px 24px;
+    font-family: Inter, sans;
+    font-size: 11px;
+    color: #647696;
+    font-weight: 700;
+}
