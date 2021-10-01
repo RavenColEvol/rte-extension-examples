@@ -52,7 +52,7 @@ module.exports = {
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
-    port: 1269,
+    port: 1268,
     headers: {
       'Access-Control-Allow-Origin': '*',
     },

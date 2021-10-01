@@ -35,7 +35,7 @@ const Twitter = ({ id, parentClass }) => {
     }
     
     const handleLoad = (e) => {
-      const rendered = e?.data?.['twttr.embed']?.method === 'twttr.private.rendered';
+      const rendered = e.data['twttr.embed'].method === 'twttr.private.rendered';
       const isCurrentTweet = rendered && e.data['twttr.embed'].params[0].data.tweet_id === videoId;
       if(rendered && isCurrentTweet) {
         setLoading(false);
