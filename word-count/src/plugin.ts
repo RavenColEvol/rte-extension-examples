@@ -9,7 +9,9 @@ export default ContentstackSDK.init().then(async (sdk) => {
   
   if(!RTE) return [];
   const WordCount = withWordCounter(RTE);
-  return [WordCount];
+  return {
+    WordCount
+  };
 });
 
 // export default {

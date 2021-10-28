@@ -2,7 +2,7 @@ import { update, setup } from "./helper";
 
 export const withWordCounter = (RTE: any) => {
   const WordCount = RTE("word-count", (rte: any) => {
-    console.log("rte here", rte.getConfig());
+    console.log('rte config', rte.getConfig());
     rte["counter"] = setup(rte["ref"]);
     update(rte);
 

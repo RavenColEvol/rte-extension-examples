@@ -1,0 +1,669 @@
+[
+    {
+      "value": "Africa",
+      "label": "Africa",
+      "children": [
+        {
+          "value": "Nigeria",
+          "label": "Nigeria",
+          "children": [
+            {
+              "value": "Abia",
+              "label": "Abia"
+            },
+            {
+              "value": "Adamawa",
+              "label": "Adamawa"
+            },
+            {
+              "value": "Anambra",
+              "label": "Anambra"
+            },
+            {
+              "value": "Bauchi",
+              "label": "Bauchi"
+            }
+          ]
+        },
+        {
+          "value": "Ethopia",
+          "label": "Ethopia",
+          "children": [
+            {
+              "value": "Afar",
+              "label": "Afar"
+            },
+            {
+              "value": "Amhara",
+              "label": "Amhara"
+            },
+            {
+              "value": "Oromia",
+              "label": "Oromia"
+            },
+            {
+              "value": "Dire Dawa",
+              "label": "Dire Dawa"
+            }
+          ]
+        },
+        {
+          "value": "Botswana",
+          "label": "Botswana",
+          "children": [
+            {
+              "value": "Serowe",
+              "label": "Serowe"
+            },
+            {
+              "value": "Selibe",
+              "label": "Selibe"
+            },
+            {
+              "value": "Maun",
+              "label": "Maun"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "value": "Europe",
+      "label": "Europe",
+      "children": [
+        {
+          "value": "Northern-Europe",
+          "label": "Northern-Europe",
+          "children": [
+            {
+              "value": "Norway",
+              "label": "Norway",
+              "children": [
+                {
+                  "value": "Oslo",
+                  "label": "Oslo"
+                },
+                {
+                  "value": "Bergen",
+                  "label": "Bergen"
+                },
+                {
+                  "value": "Kirkenes",
+                  "label": "Kirkenes"
+                }
+              ]
+            },
+            {
+              "value": "Finland",
+              "label": "Finland",
+              "children": [
+                {
+                  "value": "Helsinki",
+                  "label": "Helsinki"
+                },
+                {
+                  "value": "Huittinen",
+                  "label": "Huittinen"
+                },
+                {
+                  "value": "Hyvinkää",
+                  "label": "Hyvinkää"
+                }
+              ]
+            },
+            {
+              "value": "Sweden",
+              "label": "Sweden",
+              "children": [
+                {
+                  "value": "Götaland",
+                  "label": "Götaland"
+                },
+                {
+                  "value": "Svealand",
+                  "label": "Svealand"
+                },
+                {
+                  "value": "Österland",
+                  "label": "Österland"
+                }
+              ]
+            },
+            {
+              "value": "Denmark",
+              "label": "Denmark"
+            }
+          ]
+        },
+        {
+          "value": "Western-Europe",
+          "label": "Western-Europe",
+          "children": [
+            {
+              "value": "Belgium",
+              "label": "Belgium",
+              "children": [
+                {
+                  "value": "OsAntwerpenlo",
+                  "label": "OsAntwerpenlo"
+                },
+                {
+                  "value": "BergeLimburgn",
+                  "label": "BergeLimburgn"
+                },
+                {
+                  "value": "Luxembourg",
+                  "label": "Luxembourg"
+                }
+              ]
+            },
+            {
+              "value": "Ireland",
+              "label": "Ireland",
+              "children": [
+                {
+                  "value": "Connacht",
+                  "label": "Connacht"
+                },
+                {
+                  "value": "Leinster",
+                  "label": "Leinster"
+                },
+                {
+                  "value": "Munster",
+                  "label": "Munster"
+                }
+              ]
+            },
+            {
+              "value": "France",
+              "label": "France",
+              "children": [
+                {
+                  "value": "Bretagne",
+                  "label": "Bretagne"
+                },
+                {
+                  "value": "Bourgogne",
+                  "label": "Bourgogne"
+                },
+                {
+                  "value": "Corse",
+                  "label": "Corse"
+                }
+              ]
+            },
+            {
+              "value": "Austria",
+              "label": "Austria",
+              "children": [
+                {
+                  "value": "Tirol",
+                  "label": "Tirol"
+                },
+                {
+                  "value": "Salzburg",
+                  "label": "Salzburg"
+                },
+                {
+                  "value": "Vienna",
+                  "label": "Vienna"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "value": "Eastern-Europe",
+          "label": "Eastern-Europe",
+          "children": [
+            {
+              "value": "Poland",
+              "label": "Poland",
+              "children": [
+                {
+                  "value": "Lublin",
+                  "label": "Lublin"
+                },
+                {
+                  "value": "Lubusz",
+                  "label": "Lubusz"
+                },
+                {
+                  "value": "Opole",
+                  "label": "Opole"
+                }
+              ]
+            },
+            {
+              "value": "Croatia",
+              "label": "Croatia",
+              "children": [
+                {
+                  "value": "Dalmatia",
+                  "label": "Dalmatia"
+                },
+                {
+                  "value": "Slavonia",
+                  "label": "Slavonia"
+                },
+                {
+                  "value": "Istria",
+                  "label": "Istria"
+                }
+              ]
+            },
+            {
+              "value": "Slovakia",
+              "label": "Slovakia",
+              "children": [
+                {
+                  "value": "Košice",
+                  "label": "Košice"
+                },
+                {
+                  "value": "Žilina",
+                  "label": "Žilina"
+                },
+                {
+                  "value": "Prešov",
+                  "label": "Prešov"
+                }
+              ]
+            },
+            {
+              "value": "Hungary",
+              "label": "Hungary",
+              "children": [
+                {
+                  "value": "Budapest",
+                  "label": "Budapest"
+                },
+                {
+                  "value": "Debrecen",
+                  "label": "Debrecen"
+                },
+                {
+                  "value": "Miskolc",
+                  "label": "Miskolc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "value": "Souther-Europe",
+          "label": "Souther-Europe",
+          "children": [
+            {
+              "value": "Greece",
+              "label": "Greece",
+              "children": [
+                {
+                  "value": "Attica",
+                  "label": "Attica"
+                },
+                {
+                  "value": "Thessaly",
+                  "label": "Thessaly"
+                },
+                {
+                  "value": "Crete",
+                  "label": "Crete"
+                }
+              ]
+            },
+            {
+              "value": "Italy",
+              "label": "Italy",
+              "children": [
+                {
+                  "value": "Venice",
+                  "label": "Venice"
+                },
+                {
+                  "value": "Florence",
+                  "label": "Florence"
+                },
+                {
+                  "value": "Milan",
+                  "label": "Milan"
+                }
+              ]
+            },
+            {
+              "value": "Serbia",
+              "label": "Serbia",
+              "children": [
+                {
+                  "value": "Vojvodina",
+                  "label": "Vojvodina"
+                },
+                {
+                  "value": "Belgrade",
+                  "label": "Belgrade"
+                },
+                {
+                  "value": "Western Serbia",
+                  "label": "Western Serbia"
+                }
+              ]
+            },
+            {
+              "value": "Monaco",
+              "label": "Monaco",
+              "children": [
+                {
+                  "value": "Hovedstaden",
+                  "label": "Hovedstaden"
+                },
+                {
+                  "value": "Midtjylland",
+                  "label": "Midtjylland"
+                },
+                {
+                  "value": "Nordjylland",
+                  "label": "Nordjylland"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+  
+    {
+      "value": "North America",
+      "label": "North America",
+      "children": [
+        {
+          "value": "USA",
+          "label": "USA",
+          "children": [
+            {
+              "value": "Florida",
+              "label": "Florida"
+            },
+            {
+              "value": "Kansas",
+              "label": "Kansas"
+            },
+            {
+              "value": "Virginia",
+              "label": "Virginia"
+            },
+            {
+              "value": "Las Angeles",
+              "label": "Las Angeles"
+            }
+          ]
+        },
+        {
+          "value": "Canada",
+          "label": "Canada",
+          "children": [
+            {
+              "value": "Alberta",
+              "label": "Alberta"
+            },
+            {
+              "value": "British Colombia",
+              "label": "British Colombia"
+            },
+            {
+              "value": "NewFoundland",
+              "label": "NewFoundland"
+            },
+            {
+              "value": "Nonabut",
+              "label": "Nonabut"
+            }
+          ]
+        },
+        {
+          "value": "Mexico",
+          "label": "Mexico",
+          "children": [
+            {
+              "value": "Campeche",
+              "label": "Campeche"
+            },
+            {
+              "value": "Chiapas",
+              "label": "Chiapas"
+            },
+            {
+              "value": "Colima",
+              "label": "Colima"
+            },
+            {
+              "value": "Durango",
+              "label": "Durango"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "value": "Central America",
+      "label": "Central America",
+      "children": [
+        {
+          "value": "Belize",
+          "label": "Belize",
+          "children": [
+            {
+              "value": "Cayo",
+              "label": "Cayo"
+            },
+            {
+              "value": "Corozal",
+              "label": "Corozal"
+            },
+            {
+              "value": "Orange Walk",
+              "label": "Orange Walk"
+            },
+            {
+              "value": "Toledo",
+              "label": "Toledo"
+            }
+          ]
+        },
+        {
+          "value": "Costa Rica",
+          "label": "Costa Rica",
+          "children": [
+            {
+              "value": "Alajuela",
+              "label": "Alajuela"
+            },
+            {
+              "value": "Cartago",
+              "label": "Cartago"
+            },
+            {
+              "value": "Guanacaste",
+              "label": "Guanacaste"
+            },
+            {
+              "value": "Heredia",
+              "label": "Heredia"
+            }
+          ]
+        },
+        {
+          "value": "Honduras",
+          "label": "Honduras",
+          "children": [
+            {
+              "value": "Copan",
+              "label": "Copan"
+            },
+            {
+              "value": "Cortes",
+              "label": "Cortes"
+            },
+            {
+              "value": "Colon",
+              "label": "Colon"
+            },
+            {
+              "value": "Lempira",
+              "label": "Lempira"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "value": "South America",
+      "label": "South America",
+      "children": [
+        {
+          "value": "Brazil",
+          "label": "Brazil",
+          "children": [
+            {
+              "value": "Alagoas",
+              "label": "Alagoas"
+            },
+            {
+              "value": "Amapá",
+              "label": "Amapá"
+            },
+            {
+              "value": "Amazonas",
+              "label": "Amazonas"
+            },
+            {
+              "value": "Bahia",
+              "label": "Bahia"
+            }
+          ]
+        },
+        {
+          "value": "Argentina",
+          "label": "Argentina",
+          "children": [
+            {
+              "value": "Buenos Aires",
+              "label": "Buenos Aires"
+            },
+            {
+              "value": "Catamarca",
+              "label": "Catamarca"
+            },
+            {
+              "value": "Chaco",
+              "label": "Chaco"
+            },
+            {
+              "value": "Chordoba",
+              "label": "Chordoba"
+            }
+          ]
+        },
+        {
+          "value": "Colombia",
+          "label": "Colombia",
+          "children": [
+            {
+              "value": "Antioquia",
+              "label": "Antioquia"
+            },
+            {
+              "value": "Boyacá",
+              "label": "Boyacá"
+            },
+            {
+              "value": "Bolívar",
+              "label": "Bolívar"
+            },
+            {
+              "value": "Panama",
+              "label": "Panama"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "value": "Asia_Pacific",
+      "label": "Asia_Pacific",
+      "children": [
+        {
+          "value": "India",
+          "label": "India",
+          "children": [
+            {
+              "value": "Maharashtra",
+              "label": "Maharashtra"
+            },
+            {
+              "value": "Goa",
+              "label": "Goa"
+            },
+            {
+              "value": "Madhya Pradesh",
+              "label": "Madhya Pradesh"
+            }
+          ]
+        },
+        {
+          "value": "China",
+          "label": "China",
+          "children": [
+            {
+              "value": "Fujian",
+              "label": "Fujian"
+            },
+            {
+              "value": "Anhui",
+              "label": "Anhui"
+            },
+            {
+              "value": "Gansu",
+              "label": "Gansu"
+            }
+          ]
+        },
+        {
+          "value": "Indonesia",
+          "label": "Indonesia",
+          "children": [
+            {
+              "value": "Bantan",
+              "label": "Bantan"
+            },
+            {
+              "value": "Gorontalo",
+              "label": "Gorontalo"
+            },
+            {
+              "value": "North Maluku",
+              "label": "North Maluku"
+            }
+          ]
+        },
+        {
+          "value": "Bangladesh",
+          "label": "Bangladesh",
+          "children": [
+            {
+              "value": "Rangpur",
+              "label": "Rangpur"
+            },
+            {
+              "value": "Mymensingh",
+              "label": "Mymensingh"
+            },
+            {
+              "value": "Mongla",
+              "label": "Mongla"
+            }
+          ]
+        }
+      ]
+    }
+  ]

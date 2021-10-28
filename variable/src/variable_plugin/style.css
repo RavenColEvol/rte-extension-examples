@@ -1,0 +1,47 @@
+@import url("http://fonts.cdnfonts.com/css/menlo");
+
+.hyperlink-info-tooltip {
+    transition: 0.15s all ease-in-out;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.04), 0 4px 8px rgba(0, 0, 0, 0.06);
+    margin-left: 3px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    background: white;
+    padding: 10px 15px;
+}
+
+pre.data-box {
+    color: #475161;
+    font-family: "Inter", sans-serif;
+    max-width: 315px;
+    max-height: 145px;
+    line-height: 15.6px;
+    font-size: 12px;
+    overflow: scroll;
+    padding: 3px;
+    margin: 0;
+}
+
+.hyperlink-info-tooltip--invalid {
+    color: grey;
+}
+
+.variable-plugin {
+    color: #6c5ce7;
+    font-family: "Menlo", sans-serif;
+    background-color: #efedfc;
+    margin: 0 2px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.tippy-inline {
+    display: inline-block;
+}
+
+.variable-plugin.variable-plugin--invalid {
+    color: #d62400;
+    background: #ffeeeb;
+}
