@@ -36,13 +36,7 @@ const list = COLORS.map((_) => ({
     showAsActive: true,
     action: () => {
         const {rte} = window;
-        const isColor = rte.hasMark('font-color');
-       
-        if(isColor) {
-            rte.removeMark('font-color');
-        } else {
-            rte.addMark('font-color', _['color']);
-        }
+        rte.addMark('font-color', _['color']);
     }
 }))
 
