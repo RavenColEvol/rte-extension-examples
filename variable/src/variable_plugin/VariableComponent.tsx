@@ -18,17 +18,14 @@ const DataViewerTooltip = ({ field }) => {
 const VariableComponent = (props) => {
     const { attributes, attrs, children, variableData } = props;
     const [source, target] = useSingleton({
-        overrides: ["placement"]
+        overrides: ["placement"],
     });
-    console.error("books", variableData, attrs.var);
     const fileTitle = variableData[attrs.var.uid]?.title;
     const fileData = variableData[attrs.var.uid]?.value?.[attrs.var.title];
 
     return (
         <span className="tippy-inline" {...attributes}>
-            <Tippy 
-                singleton={source}  
-            />
+            <Tippy singleton={source} />
             <Tippy
                 appendTo={document.body}
                 singleton={target}
