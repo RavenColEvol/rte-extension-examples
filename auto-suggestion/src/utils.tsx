@@ -10,14 +10,14 @@ let debouncedCallback = debounce(getSuggestion, 500);
       let nodeText = rte.getNode(rte.selection.get())[0].text
       console.log(nodeText.length)
         if(!document.getElementById('shadowDiv')){
-          let suggestion = await debouncedCallback(nodeText, 'data-api')
+          let suggestion = await debouncedCallback(nodeText, 'open-ai')
           if(suggestion ){
               renderSuggestion(window.getSelection()?.anchorNode, suggestion, key, true)
           }
         }
         else{
           if(document.getElementById('shadowDiv')?.childNodes[0]?.textContent === ''){
-            let suggestion = await debouncedCallback(nodeText, 'data-api')
+            let suggestion = await debouncedCallback(nodeText, 'open-ai')
             if(suggestion){
                 renderSuggestion(window.getSelection()?.anchorNode, suggestion, key, true)
             }
