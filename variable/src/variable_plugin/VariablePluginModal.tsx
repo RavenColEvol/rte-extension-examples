@@ -57,6 +57,8 @@ const VariablePluginModal = (props: any) => {
                     var: value.value,
                 },
                 children: [{ text: "" }],
+            }, {
+                at: props.savedSelection || rte.selection.getEnd([]),
             });
         }
 
