@@ -9,7 +9,6 @@ export const fieldExtractor = (field: any[], uid: string) => {
             throw new Error("Mark a field as group title");
         }
 
-        console.log("mayhem data", fieldObj);
         if (fieldObj.hasOwnProperty("enabled") && !fieldObj.enabled) return;
 
         actualData[fieldObj.title] = { field: fieldObj, uid };
