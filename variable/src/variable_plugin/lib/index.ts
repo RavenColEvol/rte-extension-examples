@@ -9,6 +9,8 @@ export const fieldExtractor = (field: any[], uid: string) => {
             throw new Error("Mark a field as group title");
         }
 
+        if (fieldObj.hasOwnProperty("enabled") && !fieldObj.enabled) return;
+
         actualData[fieldObj.title] = { field: fieldObj, uid };
     });
 
