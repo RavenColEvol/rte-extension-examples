@@ -225,6 +225,8 @@ export default ContentstackSDK.init().then(async (sdk) => {
     }
 
     // step 5 return the plugin
+}).catch(err => {
+    console.log('err', err);
 });
 
 // blank boilerplate

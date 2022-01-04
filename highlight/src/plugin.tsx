@@ -2,9 +2,9 @@ import React from 'react'
 import { Icon } from '@contentstack/venus-components'
 import ContentstackSDK from "@contentstack/app-sdk";
 
-
 export default ContentstackSDK.init().then(async (sdk) => {
-    const extensionObj = await sdk["Extension"];
+    console.error('sdk here', sdk);
+    const extensionObj = await sdk["location"];
     const RTE = await extensionObj["RTEPlugin"];
     if(!RTE) return ;
 
@@ -17,7 +17,7 @@ export default ContentstackSDK.init().then(async (sdk) => {
         display: ['toolbar'],
         elementType: ['text']
     }));
-
+    console.log('')
     return {
         Highlight
     };

@@ -4,7 +4,7 @@ import ContentstackSDK from "@contentstack/app-sdk";
 import './style.css';
 
 export default ContentstackSDK.init().then(async (sdk) => {
-    const extensionObj = await sdk["Extension"];
+    const extensionObj = await sdk["location"];
     const RTE = await extensionObj["RTEPlugin"];
     if(!RTE) return ;
 
@@ -30,4 +30,6 @@ export default ContentstackSDK.init().then(async (sdk) => {
     return {
         Info
     };
+}).catch(err => {
+    console.log('err', err);
 });
