@@ -1,13 +1,13 @@
 export declare const getEmbedType: (url: string) => {
     type: string;
     props: {
-        url: string;
-        id?: undefined;
+        id: string;
+        url?: undefined;
     };
 } | {
     type: string;
     props: {
-        id: string;
-        url?: undefined;
+        url: string | null;
+        id?: undefined;
     };
 };

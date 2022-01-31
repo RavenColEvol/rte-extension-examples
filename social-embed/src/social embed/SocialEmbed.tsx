@@ -1,14 +1,15 @@
-//@ts-nocheck
 import React from "react";
 import Youtube from "./medias/Youtube";
 import Twitter from "./medias/Twitter";
+import { Instagram } from "./medias/Instagram";
 import { getEmbedType } from "./lib";
 
-const SocialEmbed = (props) => {
+const SocialEmbed = (props:any) => {
   const { attributes, attrs, children } = props;
   const embeds:any = {
     Youtube,
     Twitter,
+    Instagram
   };
 
   const result = getEmbedType(attrs.url);

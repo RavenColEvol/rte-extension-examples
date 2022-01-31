@@ -22,6 +22,22 @@ export const getEmbedType = (url: string) => {
     };
   }
 
+  // handle html embeds
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(url, 'text/html');
+  
+
+  const igBlockquote = doc.querySelector('.instagram-media');
+  if(igBlockquote) {
+    const url = igBlockquote.getAttribute('data-instgrm-permalink');
+    return {
+      type: 'Instagram',
+      props: {
+        url: url
+      }
+    }
+  }
+
   return {
     type: "iframe",
     props: {
