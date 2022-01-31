@@ -19,7 +19,7 @@ import {
 } from "./icons";
 
 import CheckboxTree from "react-checkbox-tree";
-
+import 'react-checkbox-tree/lib/react-checkbox-tree.css';
 import "./modal.css";
 
 const AudienceModal = (props: any) => {

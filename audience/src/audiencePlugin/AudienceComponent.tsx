@@ -1,6 +1,5 @@
 import React from "react";
 import { cbModal } from "@contentstack/venus-components";
-import { cx } from "@emotion/css";
 import AudienceModal from "./AudienceModal";
 
 import "./style.css";

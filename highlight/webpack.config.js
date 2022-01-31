@@ -47,8 +47,10 @@ module.exports = {
         contentBase: path.join(__dirname, "dist"),
         compress: true,
         port: 1268,
+        https: true,
+        disableHostCheck: true,
         headers: {
-            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Origin": "*"
         },
     },
 };

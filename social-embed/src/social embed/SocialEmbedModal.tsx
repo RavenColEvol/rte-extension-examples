@@ -14,6 +14,7 @@ const SocialEmbedModal = (props: any) => {
   const { rte } = props;
   const handleSubmit = (e: any) => {
     e.preventDefault();
+    //* Insert social-embed node with the url
     rte.insertNode(
       {
         type: "social-embed",
@@ -44,7 +45,7 @@ const SocialEmbedModal = (props: any) => {
               placeholder="Enter Embeded url"
               type="url"
               value={url}
-              onChange={(e) => setUrl(e.target.value)}
+              onChange={(e:any) => setUrl(e.target.value)}
             />
           </Field>
         </form>

@@ -1,7 +1,7 @@
 //@ts-nocheck
 export const getEmbedType = (url: string) => {
-  const regex = /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/ ]{11})/i;
-  const match = url.match(regex);
+  const youtubeRegex = /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/ ]{11})/i;
+  const match = url.match(youtubeRegex);
   if (match) {
     return {
       type: "Youtube",
@@ -11,13 +11,13 @@ export const getEmbedType = (url: string) => {
     };
   }
 
-  const regex2 = /(?:twitter\.com\/[^\/]+\/status(?:es)?\/)([0-9]+)/i;
-  const match2 = url.match(regex2);
-  if (match2) {
+  const twitterRegex = /(?:twitter\.com\/[^\/]+\/status(?:es)?\/)([0-9]+)/i;
+  const twitterMatch = url.match(twitterRegex);
+  if (twitterMatch) {
     return {
       type: "Twitter",
       props: {
-        id: match2[1],
+        id: twitterMatch[1],
       },
     };
   }

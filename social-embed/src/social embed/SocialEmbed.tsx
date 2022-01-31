@@ -1,11 +1,11 @@
 //@ts-nocheck
 import React from "react";
-import Youtube from "./Youtube";
-import Twitter from "./Twitter";
+import Youtube from "./medias/Youtube";
+import Twitter from "./medias/Twitter";
 import { getEmbedType } from "./lib";
 
 const SocialEmbed = (props) => {
-  const { attributes, attrs, children, rte } = props;
+  const { attributes, attrs, children } = props;
   const embeds:any = {
     Youtube,
     Twitter,
@@ -16,7 +16,6 @@ const SocialEmbed = (props) => {
 
   return (
     <div
-      {...attrs}
       {...attributes}
       style={{
         width: "100%",

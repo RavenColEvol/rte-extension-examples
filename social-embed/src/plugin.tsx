@@ -12,25 +12,22 @@ import { cbModal } from '@contentstack/venus-components';
 
 // step 2 initialize contentstack app sdk
 export default ContentstackSDK.init().then(async (sdk) => {
-  const extensionObj = await sdk['Extension'];
+  const extensionObj = await sdk['location'];
   const RTE = await extensionObj['RTEPlugin'];
-
+  if(!RTE) return {};
   // step 3 create a plugin
   // step 4 register the plugin using RTE Plugin
   const SocialEmbedPlugin = RTE('social-embed',() => ({
-    iconName: SocialEmbedIcon,
+    icon: SocialEmbedIcon,
     title: "Social Embed",
-    Component: SocialEmbed,
-    elementType: ['inline', 'void'],
-    dnd: {
-      disable: true,
-      hideSelectionBackground: true,
-  },
-    displayOn: ['toolbar']
+    render: SocialEmbed,
+    elementType: ['void'],
+    display: ['toolbar']
   }));
-
+  
   SocialEmbedPlugin.on('exec', (rte) => {
     const savedSelection = rte.selection.get();
+    //* Open a modal when button is clicked
     cbModal({
       component: (props) => <SocialEmbedModal savedSelection={savedSelection} rte={rte} {...props}/>,
       modalProps: {
