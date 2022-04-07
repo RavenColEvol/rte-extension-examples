@@ -1,0 +1,41 @@
+.p-6 {
+    padding: 0 6px;
+}
+
+.mr-8 {
+    margin-right: 8px;
+}
+
+.comment {
+    background: #eee;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 0 2px;
+}
+
+.comment_modal {
+    min-height: auto !important;
+}
+
+.btn {
+    width: 16px;
+    height: 16px;
+}
+
+.btn path {
+    fill: white !important;
+}
+
+.comment_list {
+    list-style-position: inside;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+}
+
+.comment_list__item{
+    margin-bottom: 8px;
+    padding: 6px 6px;
+    background: #f2f2f2;
+    border: 1px solid #eee;
+    border-radius: 3px;
+}
