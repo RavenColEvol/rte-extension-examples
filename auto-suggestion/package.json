@@ -63,6 +63,7 @@
     "@contentstack/app-sdk": "github:contentstack/app-sdk#feature/rte-extension",
     "@contentstack/venus-components": "github:contentstack/venus-components#rte-extension",
     "@emotion/core": "^10.0.22",
+    "axios": "^0.27.2",
     "lodash": "^4.17.21",
     "react": "^16.11.0",
     "react-dom": "^16.13.1",

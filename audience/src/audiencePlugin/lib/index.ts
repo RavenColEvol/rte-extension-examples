@@ -1,4 +1,4 @@
-export const fieldExtractor = (group: any[] = [], group_title = "title") => {
+export const fieldExtractor = (group: any[] = [], group_title) => {
     return group.map((field) => {
         if (!field[group_title]) throw new Error("field is missing");
         return {
@@ -7,3 +7,4 @@ export const fieldExtractor = (group: any[] = [], group_title = "title") => {
         };
     });
 };
+

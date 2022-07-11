@@ -1,4 +1,4 @@
-let url ='https://dev-text-analytics-api.contentstack.com/get_predictions/'
+let url ='https://dev-generic-bert-suggestions.csnonprod.com/get_predictions'
 
 export const getAPISuggestion = async (text: any) => {
    return await fetch(url, {
@@ -6,9 +6,9 @@ export const getAPISuggestion = async (text: any) => {
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json',
-        'authtoken': 'bltbcdc58e1d6cbb0ad'
+        'authtoken': 'blt21a01142c4804a5f'
       },
-      body: JSON.stringify({ text: text, max_op_words: 3, max_time: 1, max_predictions: 1 })
+      body: JSON.stringify({ input_text: text})
     })
       .then(res => {
         if (!res.ok) {
@@ -17,7 +17,10 @@ export const getAPISuggestion = async (text: any) => {
         return res.json()
       })
       .then(data => {
-        return data[0].generated_text.substr(text.length)
+        return data.substr(text.length)
       })
-      .catch(err => console.log('error', err))
+      .catch(err => {console.log('error', err)
+      throw new Error(err)
+    }
+      )
   }

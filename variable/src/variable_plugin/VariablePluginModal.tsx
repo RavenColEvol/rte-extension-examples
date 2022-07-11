@@ -7,6 +7,7 @@ import {
     ModalFooter,
     Select,
 } from "@contentstack/venus-components";
+import EmptyStateComponent from './UnconfiguredState'
 
 import "./modal.css";
 
@@ -15,7 +16,9 @@ const VariablePluginModal = (props: any) => {
         label: string;
         value: { uid: string; title: string };
     } | null>(null);
-    const { rte } = props;
+    const [isConfigured, setIsConfigured] = useState(props.variableData.length > 0 ? true : false)
+    const { rte, invalidConfig } = props;
+
 
     React.useEffect(() => {
         const [node] = rte.getNodes({
@@ -38,7 +41,6 @@ const VariablePluginModal = (props: any) => {
             match: (n: any) => n.type === "variable-plugin",
             at: props.savedSelection,
         });
-
         if (node) {
             const variable = node?.[0]?.attrs?.var;
             if (variable !== value.label) {
@@ -69,6 +71,7 @@ const VariablePluginModal = (props: any) => {
         <Fragment>
             <ModalHeader title={"Variable"} closeModal={props.closeModal} />
             <ModalBody>
+                <EmptyStateComponent isConfigured={isConfigured} invalidConfig={invalidConfig}>
                 <form onSubmit={handleSubmit}>
                     <Select
                         selectLabel="Single Variable"
@@ -79,6 +82,7 @@ const VariablePluginModal = (props: any) => {
                         width="200px"
                     />
                 </form>
+                </EmptyStateComponent>
             </ModalBody>
             <ModalFooter>
                 <ButtonGroup>
@@ -90,6 +94,7 @@ const VariablePluginModal = (props: any) => {
                         Cancel
                     </Button>
                     <Button
+                        disabled={!isConfigured}
                         key="add"
                         icon="CheckedWhite"
                         onClick={handleSubmit}
