@@ -83,6 +83,15 @@ export default ContentstackSDK.init()
               (invalidConfig.errorHeading = "Invalid Content Type UID"),
                 (invalidConfig.errorMessage =
                   "The content type provided in app configuration is either invalid or does not exist. Please verify the app config settings in Marketplace and try again.");
+            }else if (
+              typeof err === "object" &&
+              err
+                .toString()
+                ?.includes("Group must be multiple")
+            ) {
+              (invalidConfig.errorHeading = "Group must be multiple"),
+                (invalidConfig.errorMessage =
+                  `The field "${config.field}" provided in app configuration must be multiple`);
             }
           }
         }

@@ -29,8 +29,6 @@ const AudienceModal = (props: any) => {
     const [expanded, setExpanded] = useState<any>(attrs.expanded || []);
     const [isConfigured, setIsConfigured] = useState(audiences ? true : false)
 
-    useEffect(() => {
-    }, [checked, expanded]);
     const handleAddRegion = (event) => {
         event.preventDefault();
         savedSelection = savedSelection || {
