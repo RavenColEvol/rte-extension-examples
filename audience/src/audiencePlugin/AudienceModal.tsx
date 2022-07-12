@@ -19,25 +19,16 @@ import {
 } from "./icons";
 
 import CheckboxTree from "react-checkbox-tree";
+import EmptyStateComponent from "./UnconfiguredState";
 import 'react-checkbox-tree/lib/react-checkbox-tree.css';
 import "./modal.css";
 
 const AudienceModal = (props: any) => {
-    let { rte, savedSelection, audiences, attrs = {}, slatePath } = props;
-    console.error(
-        "mayhem",
-        props,
-        savedSelection,
-        attrs.expanded,
-        attrs.checked
-    );
-
+    let { rte, savedSelection, audiences, attrs = {}, slatePath, invalidConfig } = props;
     const [checked, setChecked] = useState<any>(attrs.checked || []);
     const [expanded, setExpanded] = useState<any>(attrs.expanded || []);
+    const [isConfigured, setIsConfigured] = useState(audiences ? true : false)
 
-    useEffect(() => {
-        console.error("useeffect", checked, expanded);
-    }, [checked, expanded]);
     const handleAddRegion = (event) => {
         event.preventDefault();
         savedSelection = savedSelection || {
@@ -110,8 +101,6 @@ const AudienceModal = (props: any) => {
                 ],
                 offset: 0,
             };
-
-            console.error("savedSelection", newSelection, savedSelection);
             rte.selection.set(rte.selection.getEnd([]));
         }
 
@@ -121,7 +110,8 @@ const AudienceModal = (props: any) => {
         <div>
             <ModalHeader title="Select Audience" closeModal={props.closeModal} />
             <ModalBody>
-                <div
+               <EmptyStateComponent isConfigured={isConfigured} invalidConfig={invalidConfig}>
+               <div
                     style={{
                         height: "234px",
                     }}
@@ -151,6 +141,7 @@ const AudienceModal = (props: any) => {
                         />
                     </Field>
                 </div>
+               </EmptyStateComponent>
             </ModalBody>
 
             <ModalFooter>
@@ -159,6 +150,7 @@ const AudienceModal = (props: any) => {
                         Cancel
                     </Button>
                     <Button
+                        disabled={!isConfigured}
                         key="addButton"
                         id="addRegionBtn"
                         icon="CheckedWhite"

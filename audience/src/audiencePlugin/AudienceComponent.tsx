@@ -12,6 +12,7 @@ export const AudiencePreTag = (props) => {
         audienceList,
         savedSelection,
         rte,
+        invalidConfig
     } = props;
 
     console.error("props", props, attrs.audiences);
@@ -27,6 +28,7 @@ export const AudiencePreTag = (props) => {
                     attrs={attrs}
                     {...props}
                     {...modalProps}
+                    invalidConfig={invalidConfig}
                 />
             ),
 
