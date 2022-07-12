@@ -6,7 +6,6 @@ export const getAPISuggestion = async (text: any) => {
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json',
-        'authtoken': 'blt21a01142c4804a5f'
       },
       body: JSON.stringify({ input_text: text})
     })

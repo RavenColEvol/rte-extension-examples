@@ -6,7 +6,7 @@ export const fieldExtractor = (field: any[], uid: string, group_title) => {
 
     field.forEach((fieldObj) => {
         if (!fieldObj.hasOwnProperty(group_title)) {
-            throw new Error("Mark a field as group title");
+            throw new Error("Field title not found");
         }
 
         if (fieldObj.hasOwnProperty("enabled") && !fieldObj.enabled) return;

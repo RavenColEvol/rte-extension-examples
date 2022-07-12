@@ -80,7 +80,7 @@ export default ContentstackSDK.init().then(async (sdk) => {
           invalidConfig.isConfigInvalid = true;
           if (
             typeof err === "object" &&
-            err.toString()?.includes("Mark a field as group title")
+            err.toString()?.includes("Field title not found")
           ) {
             invalidConfig.errorHeading = "Invalid Group Title";
             invalidConfig.errorMessage =
