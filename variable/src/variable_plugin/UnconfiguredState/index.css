@@ -1,0 +1,18 @@
+.UnconfigurateState--center{
+    font-family: "Inter",sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.UnconfigurateState--center .EmptyState__image{
+    margin: 20px 0;
+}
+.UnconfigurateState--center .EmptyState__description{
+    color: #475161;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 185%;
+    text-align: center;
+}

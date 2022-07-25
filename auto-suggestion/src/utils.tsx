@@ -2,30 +2,31 @@
 import { getSuggestion } from "./getSuggestionFromProvider/getSuggestion"
 import { debounce } from "lodash"
 
-let debouncedCallback = debounce(getSuggestion, 500);
+// let debouncedCallback = debounce(getSuggestion, 500);
 
  export const renderAutoSuggestion = async (rte: any, key: any) => {
     let editorSelection = rte.selection.get()
     if(editorSelection && key !== 'Tab'){
       let nodeText = rte.getNode(rte.selection.get())[0].text
-      console.log(nodeText.length)
+       if(nodeText && nodeText.trim().length !== 0){
         if(!document.getElementById('shadowDiv')){
-          let suggestion = await debouncedCallback(nodeText, 'open-ai')
-          if(suggestion ){
+          let suggestion = await getSuggestion(nodeText, 'data-api')
+          if(suggestion){
               renderSuggestion(window.getSelection()?.anchorNode, suggestion, key, true)
           }
         }
         else{
           if(document.getElementById('shadowDiv')?.childNodes[0]?.textContent === ''){
-            let suggestion = await debouncedCallback(nodeText, 'open-ai')
+            let suggestion = await getSuggestion(nodeText, 'data-api')
             if(suggestion){
                 renderSuggestion(window.getSelection()?.anchorNode, suggestion, key, true)
             }
           }
           else{
-              renderSuggestion(window.getSelection()?.anchorNode, document.getElementById('shadowDiv')?.childNodes[0].textContent, key, false)
+            renderSuggestion(window.getSelection()?.anchorNode, document.getElementById('shadowDiv')?.childNodes[0].textContent, key, false)
           }
         }
+       }
       }
  }
 
