@@ -1,4 +1,4 @@
-let url ='https://dev-generic-bert-suggestions.csnonprod.com/get_predictions'
+let url ='https://dev-datascience.csnonprod.com/autosuggestions/get_predictions'
 
 export const getAPISuggestion = async (text: any) => {
    return await fetch(url, {
@@ -6,7 +6,7 @@ export const getAPISuggestion = async (text: any) => {
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json',
-        'authtoken': 'blt5f30be324b965645'
+        'authtoken': 'blt0920c21fdb59ab35'
       },
       body: JSON.stringify({ input_text: text})
     })

@@ -5,6 +5,7 @@ import {renderAutoSuggestion, renderSuggestion} from './utils'
 let key: any;
 
 export default ContentstackSDK.init().then(async (sdk) => {
+  console.log("Plugin loaded")
   const extensionObj = await sdk['location'];
   const RTE = await extensionObj['RTEPlugin'];
 
