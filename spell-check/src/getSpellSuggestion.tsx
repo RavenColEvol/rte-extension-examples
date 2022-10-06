@@ -1,6 +1,6 @@
-let url = 'https://dev-datascience.csnonprod.com/grammarcorrection/get_predictions'
+let url = 'https://dev-datascience.csnonprod.com/spellcheck/spell-check'
 
-export const getGrammerSuggestion = async (text: any) => {
+export const getSpellSuggestion = async (text: any) => {
     return await fetch(url, {
       method: 'POST',
       headers: {
@@ -8,7 +8,7 @@ export const getGrammerSuggestion = async (text: any) => {
         'Content-Type': 'application/json',
         'Accept': 'application/json'
       },
-      body: JSON.stringify({ input_text: `${text}.` })
+      body: JSON.stringify({ input_text: text })
     })
       .then(res => {
         if (!res.ok) {
